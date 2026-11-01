@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- This line makes the page fit phone screens properly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrightNest Cleaning Co. | Fictional Demo Website</title>
+  <meta name="description" content="Demo website for BrightNest Cleaning Co., a fictional residential cleaning company.">
+  <link rel="stylesheet" href="style.css">
+  <!-- "defer" means: run the script after the page has loaded -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#home" aria-label="BrightNest Cleaning Co. home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#1F4D3A"/>
+          <path d="M7 16 16 8l9 8v9H7z" fill="#FAF6EC"/>
+          <path d="M22 5l1 3 3 1-3 1-1 3-1-3-3-1 3-1z" fill="#9CC4AB"/>
+        </svg>
+        <span class="brand-name">BrightNest</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="button button-primary" href="#contact">Get a Free Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>A clean home feels like a deep breath.</h1>
+          <p class="hero-lead">BrightNest sends friendly, careful cleaners to your door, so you can come home to fresh air, clear surfaces and a little extra time.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#contact">Get a Free Quote</a>
+            <a class="button button-secondary" href="#services">Explore Services</a>
+          </div>
+          <p class="hero-note">Demo website for a fictional company.</p>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Hero illustration drawn with SVG shapes (no image file needed) -->
+          <svg viewBox="0 0 520 440" role="img" aria-label="Illustration of a bright, tidy living room with a sofa, a plant and a large window">
+            <rect width="520" height="440" rx="28" fill="#E3EFE6"/>
+            <path d="M150 300V150A110 110 0 0 1 370 150V300Z" fill="#FAF6EC"/>
+            <path d="M260 40V300M150 190H370" stroke="#B9D3C2" stroke-width="6"/>
+            <path d="M0 330H520V412a28 28 0 0 1-28 28H28A28 28 0 0 1 0 412Z" fill="#D3E4D8"/>
+            <ellipse cx="260" cy="395" rx="150" ry="20" fill="#C2DACA"/>
+            <rect x="150" y="240" width="220" height="64" rx="20" fill="#2B6A50"/>
+            <rect x="130" y="282" width="260" height="72" rx="22" fill="#1F4D3A"/>
+            <rect x="110" y="272" width="42" height="88" rx="16" fill="#1F4D3A"/>
+            <rect x="368" y="272" width="42" height="88" rx="16" fill="#1F4D3A"/>
+            <rect x="175" y="258" width="56" height="48" rx="12" fill="#9CC4AB"/>
+            <rect x="145" y="352" width="10" height="16" rx="4" fill="#14352A"/>
+            <rect x="365" y="352" width="10" height="16" rx="4" fill="#14352A"/>
+            <path d="M425 336h50l-6 52h-38z" fill="#FAF6EC"/>
+            <ellipse cx="438" cy="300" rx="14" ry="38" fill="#2B6A50" transform="rotate(-18 438 300)"/>
+            <ellipse cx="462" cy="298" rx="14" ry="40" fill="#1F4D3A" transform="rotate(16 462 298)"/>
+            <ellipse cx="450" cy="292" rx="12" ry="42" fill="#4D8A6B"/>
+            <path d="M80 110l5 14 14 5-14 5-5 14-5-14-14-5 14-5z" fill="#1F4D3A"/>
+            <path d="M430 80l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#7FA38C"/>
+            <path d="M60 220l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#7FA38C"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section section-cream" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Cleaning that fits your home</h2>
+          <p>Three clear options, each with the same careful team behind it.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card service-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>
+            </div>
+            <h3>Standard House Cleaning</h3>
+            <p>Regular upkeep for busy households: dusting, vacuuming, mopping, kitchen and bathroom cleaning. Weekly, fortnightly or monthly.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg>
+            </div>
+            <h3>Deep Cleaning</h3>
+            <p>A top-to-bottom reset. We tackle baseboards, inside appliances, grout and the corners that get missed in everyday cleaning.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9-5 9 5v9l-9 5-9-5zM3 8l9 5 9-5M12 13v9"/></svg>
+            </div>
+            <h3>Move-In / Move-Out Cleaning</h3>
+            <p>Start fresh in a new place, or leave your old one spotless. Empty-home cleaning that helps with handover and deposits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US (About) ===== -->
+    <section class="section section-mist" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Why neighbors choose BrightNest</h2>
+          <p>We are a small, fictional team built around three simple promises.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card feature-card">
+            <div class="icon-square">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Reliable service</h3>
+            <p>Cleaners arrive on time, follow a checklist and confirm every visit. You always know who is coming.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="icon-square">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+            </div>
+            <h3>Attention to detail</h3>
+            <p>We look at the small things: window tracks, door handles, the shelf behind the toaster.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="icon-square">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            </div>
+            <h3>Flexible scheduling</h3>
+            <p>Pick a day that suits you, move it when plans change, and choose how often we visit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section section-cream" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How it works</h2>
+          <p>From first message to a fresh home in three steps.</p>
+        </div>
+
+        <!-- An ordered list (ol) is the right tag here because the steps happen in order -->
+        <ol class="steps">
+          <li class="step">
+            <span class="step-number">1</span>
+            <h3>Request a quote</h3>
+            <p>Tell us about your home and the date you have in mind. It takes about two minutes.</p>
+          </li>
+          <li class="step">
+            <span class="step-number">2</span>
+            <h3>Choose your cleaning service</h3>
+            <p>Pick the service that fits, from a regular tidy to a full deep clean.</p>
+          </li>
+          <li class="step">
+            <span class="step-number">3</span>
+            <h3>Enjoy your clean home</h3>
+            <p>Our team does the work while you relax, then you walk into a fresh, calm space.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section section-mist" id="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <h2>What customers might say</h2>
+          <p>These three reviews are made up for this demo. They are not real customers.</p>
+        </div>
+
+        <div class="card-grid">
+          <figure class="card testimonial">
+            <blockquote>"The kitchen has never looked this good. I came home and the whole flat smelled fresh."</blockquote>
+            <figcaption><strong>Maya R.</strong><span>Fictional demo testimonial</span></figcaption>
+          </figure>
+          <figure class="card testimonial">
+            <blockquote>"They worked around my night shifts and were gentle with everything. Easy to book."</blockquote>
+            <figcaption><strong>Daniel O.</strong><span>Fictional demo testimonial</span></figcaption>
+          </figure>
+          <figure class="card testimonial">
+            <blockquote>"We booked a move-out clean and the handover went smoothly. Very little stress."</blockquote>
+            <figcaption><strong>Priya S.</strong><span>Fictional demo testimonial</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE REQUEST ===== -->
+    <section class="section section-cream" id="contact">
+      <div class="container quote-grid">
+        <div class="quote-intro">
+          <h2>Get a free quote</h2>
+          <p>Fill in the form and see how a request would work. This is a demo, so nothing is sent and no booking is made.</p>
+          <p class="demo-badge">Demo form only</p>
+        </div>
+
+        <!-- "novalidate" turns off the browser's own popups so we can show our own messages -->
+        <form class="quote-form card" id="quote-form" novalidate>
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+            <p class="error-message" id="name-error"></p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+              <p class="error-message" id="email-error"></p>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-error">
+              <p class="error-message" id="phone-error"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="service">Service</label>
+              <select id="service" name="service" aria-describedby="service-error">
+                <option value="">Choose a service</option>
+                <option>Standard House Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>Move-In / Move-Out Cleaning</option>
+              </select>
+              <p class="error-message" id="service-error"></p>
+            </div>
+            <div class="form-field">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date" aria-describedby="date-error">
+              <p class="error-message" id="date-error"></p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="size">Property size</label>
+            <select id="size" name="size" aria-describedby="size-error">
+              <option value="">Choose a size</option>
+              <option>Studio or 1 bedroom</option>
+              <option>2 bedrooms</option>
+              <option>3 bedrooms</option>
+              <option>4 or more bedrooms</option>
+            </select>
+            <p class="error-message" id="size-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Additional message (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+
+          <button class="button button-primary button-full" type="submit">Send demo request</button>
+
+          <!-- aria-live makes screen readers announce the message when it appears -->
+          <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">BrightNest Cleaning Co.</p>
+        <p>A fictional business created as a website design demo.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p>Demo email: hello@example.com</p>
+        <p>Demo phone: 555-0100</p>
+        <p>Service area: Imaginary Valley (fictional)</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 BrightNest Cleaning Co. This is a fictional demo business. No services are offered.</p>
+    </div>
+  </footer>
+</body>
+</html>
